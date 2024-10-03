@@ -1,0 +1,155 @@
+/* Services Section */
+.services-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* Services Title */
+.services-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0c9af9;
+}
+
+/* Services Container */
+.services-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: white;
+  border-color: rgb(72, 0, 255);
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+/* Services Image */
+.services-image {
+  flex: 1;
+  padding: 10px;
+}
+
+.services-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Services Content */
+.services-content {
+  flex: 1;
+  padding: 10px;
+  text-align: left;
+  color: #000;
+}
+
+/* Service Heading */
+.service-heading {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+/* Services List */
+.services-list {
+  list-style-type: none;
+  padding: 0;
+  color: #000;
+}
+
+.services-list li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+/* Services Button */
+.services-button {
+  display: inline-block;
+  background: linear-gradient(45deg, #00f, #00e6ff, #1f5ff9);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.services-button:hover {
+  background-color: #6529b0;
+}
+
+/* Responsive Design */
+
+/* Tablets and Smaller Desktops */
+@media (max-width: 1024px) {
+  .services-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .services-image, .services-content {
+    flex: 1 1 100%;
+    padding: 10px;
+  }
+
+  .service-heading {
+    font-size: 1.4rem;
+  }
+
+  .services-list li {
+    font-size: 0.95rem;
+  }
+
+  .services-button {
+    font-size: 0.95rem;
+    padding: 8px 18px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .services-title {
+    font-size: 1.8rem;
+  }
+
+  .service-heading {
+    font-size: 1.3rem;
+  }
+
+  .services-list li {
+    font-size: 0.9rem;
+  }
+
+  .services-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .services-title {
+    font-size: 1.5rem;
+  }
+
+  .service-heading {
+    font-size: 1.2rem;
+  }
+
+  .services-button {
+    font-size: 0.85rem;
+    padding: 7px 14px;
+  }
+
+  .services-list li {
+    font-size: 0.85rem;
+  }
+}

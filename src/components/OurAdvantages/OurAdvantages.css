@@ -1,0 +1,128 @@
+#advantages {
+    padding: 1.5rem 0.75rem;
+    background-color: #f8f9fa;
+    
+  }
+  
+  /* Styles for the heading */
+  #advantages h1 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (min-width: 640px) {
+    #advantages h1 {
+      font-size: 1.75rem;
+      
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    #advantages h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Grid container for advantages */
+  #advantages .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    
+  }
+  
+  @media (min-width: 640px) {
+    #advantages .grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    #advantages .grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+  }
+  
+  /* Individual advantage card */
+  .grid .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(7, 243, 101, 0.763);
+    padding: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .grid .flex:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Icon styles */
+  .grid .flex .bg-secondary {
+    background-color: #e0e0e0;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 0.75rem;
+    filter: drop-shadow(1px 1px 20px #50C878);
+  }
+  
+  @media (min-width: 640px) {
+    .grid .flex .bg-secondary {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+  
+  /* Text styles */
+  .grid h1 {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  @media (min-width: 640px) {
+    .grid h1 {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Primary color styles */
+  .text-primary {
+    color: #12af2f;
+    font-weight: 600;
+  }
+  
+  /* Button styles */
+  #advantages a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #077c49be;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    text-align: center;
+    border: 2px solid #1db24c;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    margin: 1.5rem auto;
+  }
+  
+  #advantages a:hover {
+    background-color: #fff;
+    color: #2ad83e;
+  }
+  

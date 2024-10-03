@@ -1,0 +1,102 @@
+.register-card {
+    box-shadow: 0 4px 6px rgba(7, 243, 129, 0.763);
+      width: 350px;
+      max-width: 380px;
+      border-radius: 24px;
+      background-color: #f7f7f7;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+    
+    .register-image {
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(1px 1px 20px #50C878);
+      
+    }
+    
+    .register-content {
+      padding: 2px;
+    }
+    
+    .register-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+    
+    .register-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    
+    .register-duration {
+      background-color: #0a9f5fbe;
+      color: #fff;
+      padding: 4px 8px;
+      border-radius: 9999px;
+      font-size: 0.7rem;
+    }
+    
+    .register-description {
+      margin-top: 16px;
+      font-size: 1.1rem;
+    }
+    
+    .register-footer {
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .register-button {
+      background-color: #077c49be;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 9999px;
+      text-align: center;
+      border: 1px solid #00ffdd;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    
+    .register-button:hover {
+      background-color: #fff;
+      color: #077c49be;
+    }
+    
+    .register-price {
+      color: #077c49be;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    
+    /* General styles for the Courses container */
+    .courses-container {
+      width: 95%;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+    
+    .courses-title {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 32px;
+      font-weight: 500;
+    }
+    
+    .courses-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    

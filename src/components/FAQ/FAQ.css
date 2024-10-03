@@ -1,0 +1,157 @@
+/* FAQ Container */
+.faq-container {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+
+/* Contact Form Container */
+.contact-form-container {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(45deg, #00f, #00e6ff, #1f5ff9) border-box;
+  transition: all 0.3s ease-in-out;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensure wrapping for smaller screens */
+}
+
+/* Contact Form Content */
+.contact-form-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+  gap: 20px; /* Add gap to ensure spacing on smaller screens */
+}
+
+/* Contact Details */
+.contact-details {
+  width: 50%;
+  min-width: 300px; /* Ensures responsiveness on smaller screens */
+}
+
+/* Map Section */
+.map-section {
+  width: 45%;
+  margin-left: 20px;
+  min-width: 300px; /* Ensures responsiveness on smaller screens */
+}
+
+/* Contact Description */
+.contact-description {
+  max-width: 230px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Contact Form */
+.contact-form {
+  width: 100%;
+}
+
+/* Input and Textarea Styling */
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 9999px;
+  border: 1px solid #ccc;
+}
+
+.contact-textarea {
+  resize: none;
+  height: 80px;
+  border-radius: 16px;
+}
+
+/* Contact Button */
+.contact-button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(45deg, #00f, #00e6ff, #1f5ff9);
+  color: white;
+  border: 1px solid #077c49be;
+  border-radius: 9999px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Alert Styles */
+.alert {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
+  animation: fadeIn 0.5s ease;
+}
+
+.alert.show {
+  opacity: 1;
+}
+
+.alert.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.alert.error {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+.alert-close {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .contact-details, .map-section {
+    width: 100%; /* Full width for better display on tablets */
+    margin: 0; /* Remove left margin on smaller screens */
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .contact-input,
+  .contact-textarea {
+    padding: 8px; /* Slightly reduced padding for smaller screens */
+  }
+
+  .contact-button {
+    padding: 8px; /* Adjust button padding for smaller devices */
+  }
+
+  .alert {
+    padding: 8px;
+  }
+}

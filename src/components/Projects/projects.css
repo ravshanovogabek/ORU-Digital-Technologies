@@ -1,0 +1,233 @@
+/* Projects Section */
+.projects-container {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+  background: linear-gradient(to bottom, #f9f9f9, #e0f7fa);
+}
+
+/* Projects Title */
+.projects-title {
+  font-size: 2.3rem; /* Increased size for better visibility */
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1f5ff9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0 120px; /* Horizontal padding */
+}
+
+/* Project Card */
+.project-card {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card-inner {
+  position: relative;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(55deg, #00f, #00e6ff, #1f5ff9) border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Card Hover Effects */
+.project-card:hover .project-card-inner {
+  transform: scale(1.05);
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(45deg, #00f, #00e6ff, #1f5ff9);
+  animation: borderGradient 3s linear infinite;
+}
+
+.project-image {
+  width: 90%;
+  height: 220px;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0.85);
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.08);
+  filter: brightness(1);
+}
+
+/* Project Title */
+.project-title {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  color: #1f5ff9;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover .project-title {
+  color: #00e6ff;
+}
+
+/* Overlay effect on hover */
+.project-card:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  border-radius: 12px;
+  transform: translateY(20px);
+}
+
+.overlay-content {
+  color: #fff;
+  text-align: center;
+}
+
+.overlay-content h4 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.overlay-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* View More Button */
+.view-more-btn {
+  background-color: #1f5ff9;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background-color: #00e6ff;
+}
+
+/* Keyframes for animated border gradient */
+@keyframes borderGradient {
+  0% {
+      border-image-source: linear-gradient(45deg, #00f, #00e6ff, #1f5ff9);
+  }
+  50% {
+      border-image-source: linear-gradient(45deg, #00e6ff, #1f5ff9, #00f);
+  }
+  100% {
+      border-image-source: linear-gradient(45deg, #1f5ff9, #00f, #00e6ff);
+  }
+}
+
+/* Hover effect on the entire card */
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive design for tablets */
+@media (max-width: 1024px) {
+  .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 40px; /* Reduced horizontal padding */
+  }
+
+  .projects-title {
+      font-size: 2.4rem;
+  }
+
+  .project-card {
+      height: auto;
+  }
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .projects-grid {
+      grid-template-columns: 1fr;
+      padding: 0 20px; /* Further reduced horizontal padding */
+  }
+
+  .projects-title {
+      font-size: 2rem;
+  }
+
+  .project-card {
+      height: auto;
+  }
+
+  .project-title {
+      font-size: 1.3rem;
+  }
+
+  .overlay-content h4 {
+      font-size: 1.4rem; /* Adjusted for better mobile readability */
+  }
+
+  .overlay-content p {
+      font-size: 0.9rem; /* Adjusted for better mobile readability */
+  }
+
+  .view-more-btn {
+      padding: 8px 15px; /* Adjusted padding for smaller screens */
+      font-size: 0.9rem; /* Adjusted font size for buttons */
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .projects-title {
+      font-size: 1.8rem; /* Further reduced size for small screens */
+  }
+
+  .project-title {
+      font-size: 1.2rem; /* Adjusted project title size */
+  }
+
+  .overlay-content h4 {
+      font-size: 1.2rem; /* Smaller font for titles */
+  }
+
+  .overlay-content p {
+      font-size: 0.8rem; /* Smaller font for descriptions */
+  }
+
+  .view-more-btn {
+      padding: 7px 12px; /* Smaller button size */
+      font-size: 0.8rem; /* Smaller button font size */
+  }
+}
